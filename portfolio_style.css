@@ -1,0 +1,1030 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d0d0d;
+}
+.main-container {
+  width: 100vw;
+  height: 80vh;
+  max-width: 1440px; /* Adjust according to your layout */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0d0d0d;
+  background-image: url(/portfolio/assets/background.png);
+  background-size: cover; /* Ensures it covers the entire element without distortion */
+  background-position: center; /* Centers the image both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed;
+
+  border: 1px solid #fdfdfd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header__name a {
+  font-size: 65px;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: #dfbdf5;
+}
+.developer {
+  color: #fdfdfd;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 40px;
+}
+.header__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome__intro {
+  margin: 100px 0px 100px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.welcome__text p {
+  color: #fdfdfd;
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
+  font-weight: 200;
+  width: 600px;
+  margin: 5px 5px 5px 5px;
+}
+.welcome__text h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 70px;
+  font-weight: 200;
+  width: 600px;
+  margin: 5px 5px 5px 5px;
+}
+
+.welcome__text__header {
+  background: linear-gradient(90deg, #ffffff, #1a1a1a, #dfbdf5, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Ensures text is transparent */
+  background-size: 200%; /* Makes the gradient large enough to animate */
+  animation: colorChange 5s linear infinite; /* Infinite animation */
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.welcome__image {
+  position: relative;
+  display: inline-block;
+}
+.welcome__image img {
+  width: 250px;
+  height: auto;
+  filter: grayscale(100%) contrast(120%) brightness(110%);
+
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+
+  box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.7); /* Initial shadow */
+  animation: shadowMove 5s linear infinite; /* Infinite animation */
+}
+.welcome__image img:hover {
+  transform: scale(1.1); /* Zooms the image by 10% */
+}
+@keyframes shadowMove {
+  0% {
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.7);
+  }
+  25% {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.7);
+  }
+  75% {
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.7);
+  }
+}
+.welcome__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* -----------------------------FAM-PAGE----------------------------------- */
+.fam__intro {
+  margin: 150px 100px 300px 100px;
+  display: flex;
+  justify-content: center;
+
+  color: #fdfdfd;
+}
+.fam__intro__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 2;
+  margin-left: 20px;
+}
+.fam__intro__text__left,
+.fam__intro__text__right {
+  flex: 1;
+}
+
+.family__text__left,
+.family__text__right {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+.family__text__left {
+  text-align: left; /* Align text on the right */
+}
+.fam__intro__text__right {
+  display: flex;
+  text-align: end;
+  align-items: end;
+}
+.family__pic__main {
+  width: 500px;
+
+  transition: transform 0.3s ease;
+
+  box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.7); /* Initial shadow */
+  animation: shadowMove 5s linear infinite; /* Infinite animation */
+}
+.fam__members__info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fdfdfd;
+  margin: 100px 0px 100px 0px;
+}
+.fam__member__info__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 50px;
+}
+.fam__member__info {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.member__text {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+}
+.member__text h1 {
+  font-size: 45px;
+  font-weight: 200;
+}
+.member__text p {
+  font-size: 20px;
+}
+.member__name {
+  align-self: flex-start;
+}
+.member__photo {
+  width: 220px;
+  height: auto;
+}
+.family_gallery {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* Stack the rows vertically */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
+  width: 70vw; /* Full width */
+
+  margin: 0 auto;
+}
+
+.row {
+  display: flex; /* Make images in each row align horizontally */
+  flex-direction: row;
+  gap: 40px; /* Space between images */
+  margin-bottom: 40px;
+}
+
+.family_gallery img {
+  height: 400px; /* Adjust height as per your design */
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent images from shrinking */
+  transition: transform 0.3s ease;
+  filter: grayscale(100%);
+}
+.family_gallery img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  box-shadow: 10px 0px 20px 0px rgba(243, 231, 251, 0.7);
+}
+
+/* -----------------------------EDU-PAGE----------------------------------- */
+.edu__header__text h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: #fdfdfd;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 40px;
+  background: linear-gradient(90deg, #ffffff, #1a1a1a, #dfbdf5, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Ensures text is transparent */
+  background-size: 200%; /* Makes the gradient large enough to animate */
+  animation: colorChange 5s linear infinite;
+}
+.education__timeline {
+  padding: 20px;
+  margin-top: 30px;
+  color: #fdfdfd;
+  font-family: "IBM Plex Mono", monospace;
+}
+.education__timeline ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.education__timeline ul li {
+  padding: 10px 0;
+  border-left: 3px solid #333;
+  padding-left: 20px;
+  margin-left: 10px;
+  color: #fdfdfd;
+}
+.college__logo {
+  width: 80px; /* Adjust the size as needed */
+  filter: drop-shadow(0px 0px 2px white);
+  animation: rotate 7s linear infinite;
+}
+.uni__logo {
+  width: 80px; /* Adjust the size as needed */
+  filter: drop-shadow(0px 0px 2px white);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.educational__institution {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.education__years {
+  white-space: nowrap;
+}
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+table,
+th,
+td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: left;
+  color: #fdfdfd;
+}
+th {
+  background-color: #333;
+  color: white;
+}
+
+/* -----------------------------HOBBIE-PAGE----------------------------------- */
+.hobbies__container {
+  text-align: center;
+  color: #fdfdfd;
+  font-family: "Roboto Mono", monospace;
+}
+
+.hobbies__wrapper {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hobbie__item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hobbie__item h3,
+.hobbie__item p {
+  margin: 0;
+}
+
+.hobbie__icon {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.hobbie__item.even {
+  margin-top: 200px; /* Shift even items down */
+}
+
+.slide__img {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  left: -5px;
+  box-shadow: 10px 0px 20px 0px rgba(243, 231, 251, 0.7);
+}
+
+.hobbie__item.odd .slide__img {
+  top: 100%;
+}
+
+.hobbie__item.even .slide__img {
+  bottom: 100%;
+}
+
+.hobbie__item:hover .slide__img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sliding animations */
+.hobbie__item.odd:hover .slide__img {
+  transform: translateY(30px);
+}
+
+.hobbie__item.even:hover .slide__img {
+  transform: translateY(-30px);
+}
+/* -----------------------------CONTACT-PAGE----------------------------------- */
+.map {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 20px;
+}
+
+.map__content iframe {
+  max-width: 400px; /* Set a max width */
+  height: 350px;
+  border: none;
+}
+.social__logo {
+  width: 30px;
+  height: auto;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+.contact__container {
+  margin: 100px 50px 50px 50px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #fdfdfd;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+.vertical-text {
+  writing-mode: vertical-rl; /* Makes text vertical */
+  transform: rotate(180deg); /* Rotates the text to read down-up */
+  text-align: center;
+  justify-self: flex-start;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.input {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+form,
+input {
+  width: 400px;
+  height: 50px;
+  font-size: 28px;
+  font-family: "Roboto Mono", monospace;
+}
+textarea {
+  max-width: 400px;
+  min-width: 400px;
+  min-height: 50px;
+  max-height: 100px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+#submit__button {
+  width: 407px;
+}
+@media (max-width: 1920px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .main-container {
+    width: 100vw;
+    height: 80vh;
+    max-width: 1280px; /* Adjust according to your layout */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .welcome__intro {
+    margin: 80px 0px 80px 0px;
+  }
+  .welcome__text p {
+    font-size: 20px;
+  }
+  .welcome__text h1 {
+    font-size: 60px;
+    font-weight: 200;
+  }
+
+  .welcome__image img {
+    width: 200px;
+  }
+  /* -----------------------------FAM-PAGE----------------------------------- */
+  .fam__intro {
+    margin: 130px 50px 250px 50px;
+  }
+  .main-container {
+    width: 100vw;
+    height: 65vh;
+  }
+  .family__text__left,
+  .family__text__right {
+    font-size: 30px;
+  }
+
+  .family__pic__main {
+    width: 400px;
+  }
+
+  .fam__member__info__content {
+    gap: 30px;
+  }
+  .fam__member__info {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .member__text {
+    width: 200px;
+  }
+  .member__text h1 {
+    font-size: 35px;
+  }
+  .member__text p {
+    font-size: 20px;
+  }
+
+  .member__photo {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  /* -----------------------------EDU-PAGE----------------------------------- */
+  .edu__header__text h1 {
+    margin-top: 30px;
+
+    font-size: 30px;
+  }
+  .education__timeline {
+    margin-top: 20px;
+  }
+
+  .college__logo {
+    width: 50px; /* Adjust the size as needed */
+  }
+  .uni__logo {
+    width: 50px; /* Adjust the size as needed */
+  }
+
+  .educational__institution {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+
+  table {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* -----------------------------HOBBIE-PAGE----------------------------------- */
+
+  /* -----------------------------CONTACT-PAGE----------------------------------- */
+  .map {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .map__content iframe {
+    max-width: 300px; /* Set a max width */
+    height: 250px;
+    border: none;
+  }
+  .social__logo {
+    width: 30px;
+    height: auto;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  .contact__container {
+    margin: 100px 50px 50px 50px;
+    width: 80%;
+    font-size: 25px;
+  }
+  .vertical-text {
+    padding: 15px;
+    font-size: 35px;
+  }
+
+  .input {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+  form,
+  input {
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
+    font-family: "Roboto Mono", monospace;
+  }
+  textarea {
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 34px;
+    max-height: 100px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+  }
+  #submit__button {
+    width: 307px;
+  }
+}
+
+@media (max-width: 1067px) {
+  .main-container {
+    width: 100vw;
+    height: 80vh;
+    max-width: 800px; /* Adjust according to your layout */
+  }
+
+  .header__name a {
+    font-size: 35px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 8px;
+
+    font-weight: 400;
+  }
+
+  .developer {
+    font-size: 10px;
+  }
+
+  .welcome__intro {
+    width: 600px;
+    margin: 100px auto;
+  }
+  .welcome__text p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 300px;
+    margin: 5px 5px 5px 5px;
+  }
+  .welcome__text h1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    font-weight: 200;
+    width: 200px;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .welcome__image img {
+    width: 200px;
+  }
+
+  .welcome__text {
+    width: 300px;
+    gap: 10px;
+  }
+
+  /* -----------------------------FAM-PAGE----------------------------------- */
+  .fam__intro {
+    margin: 50px auto;
+  }
+
+  .family__text__left,
+  .family__text__right {
+    color: #ffffff;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 5px 0;
+  }
+  .family__text__left {
+    text-align: left; /* Align text on the right */
+  }
+  .fam__intro__text__right {
+    display: flex;
+    text-align: end;
+    align-items: end;
+  }
+  .family__pic__main {
+    width: 500px;
+
+    transition: transform 0.3s ease;
+
+    box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.7); /* Initial shadow */
+    animation: shadowMove 5s linear infinite; /* Infinite animation */
+  }
+  .fam__members__info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fdfdfd;
+    margin: 100px 0px 100px 0px;
+  }
+  .fam__member__info__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 50px;
+  }
+  .fam__member__info {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .member__text {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+  }
+  .member__text h1 {
+    font-size: 45px;
+    font-weight: 200;
+  }
+  .member__text p {
+    font-size: 20px;
+  }
+  .member__name {
+    align-self: flex-start;
+  }
+  .member__photo {
+    width: 220px;
+    height: auto;
+  }
+  .family_gallery {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; /* Stack the rows vertically */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    width: 70vw; /* Full width */
+
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex; /* Make images in each row align horizontally */
+    flex-direction: row;
+    gap: 40px; /* Space between images */
+    margin-bottom: 40px;
+  }
+
+  .family_gallery img {
+    height: 400px; /* Adjust height as per your design */
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent images from shrinking */
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+  }
+  .family_gallery img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    box-shadow: 10px 0px 20px 0px rgba(243, 231, 251, 0.7);
+  }
+
+  /* -----------------------------EDU-PAGE----------------------------------- */
+  .edu__header__text h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fdfdfd;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 40px;
+    background: linear-gradient(90deg, #ffffff, #1a1a1a, #dfbdf5, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Ensures text is transparent */
+    background-size: 200%; /* Makes the gradient large enough to animate */
+    animation: colorChange 5s linear infinite;
+  }
+  .education__timeline {
+    padding: 20px;
+    margin-top: 30px;
+    color: #fdfdfd;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .education__timeline ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .education__timeline ul li {
+    padding: 10px 0;
+    border-left: 3px solid #333;
+    padding-left: 20px;
+    margin-left: 10px;
+    color: #fdfdfd;
+  }
+  .college__logo {
+    width: 80px; /* Adjust the size as needed */
+    filter: drop-shadow(0px 0px 2px white);
+    animation: rotate 7s linear infinite;
+  }
+  .uni__logo {
+    width: 80px; /* Adjust the size as needed */
+    filter: drop-shadow(0px 0px 2px white);
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .educational__institution {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .education__years {
+    white-space: nowrap;
+  }
+  table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: "Roboto Mono", monospace;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: left;
+    color: #fdfdfd;
+  }
+  th {
+    background-color: #333;
+    color: white;
+  }
+
+  /* -----------------------------HOBBIE-PAGE----------------------------------- */
+  .hobbies__container {
+    text-align: center;
+    color: #fdfdfd;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .hobbies__wrapper {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .hobbie__item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .hobbie__item h3,
+  .hobbie__item p {
+    margin: 0;
+  }
+
+  .hobbie__icon {
+    width: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .hobbie__item.even {
+    margin-top: 200px; /* Shift even items down */
+  }
+
+  .slide__img {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    left: -5px;
+    box-shadow: 10px 0px 20px 0px rgba(243, 231, 251, 0.7);
+  }
+
+  .hobbie__item.odd .slide__img {
+    top: 100%;
+  }
+
+  .hobbie__item.even .slide__img {
+    bottom: 100%;
+  }
+
+  .hobbie__item:hover .slide__img {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Sliding animations */
+  .hobbie__item.odd:hover .slide__img {
+    transform: translateY(30px);
+  }
+
+  .hobbie__item.even:hover .slide__img {
+    transform: translateY(-30px);
+  }
+  /* -----------------------------CONTACT-PAGE----------------------------------- */
+  .map {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .map__content iframe {
+    max-width: 400px; /* Set a max width */
+    height: 350px;
+    border: none;
+  }
+  .social__logo {
+    width: 30px;
+    height: auto;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  .contact__container {
+    margin: 100px 50px 50px 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fdfdfd;
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+  }
+  .vertical-text {
+    writing-mode: vertical-rl; /* Makes text vertical */
+    transform: rotate(180deg); /* Rotates the text to read down-up */
+    text-align: center;
+    justify-self: flex-start;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .input {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+  form,
+  input {
+    width: 400px;
+    height: 50px;
+    font-size: 28px;
+    font-family: "Roboto Mono", monospace;
+  }
+  textarea {
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 50px;
+    max-height: 100px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+  }
+  #submit__button {
+    width: 407px;
+  }
+}

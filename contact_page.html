@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/portfolio/portfolio_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Noorah's portfolio</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <div class="header__top">
+          <div class="header__name">
+            <a href="/portfolio/home_page.html" class="header__logo"
+              >Aknur Turakhan</a
+            >
+          </div>
+          <nav>
+            <ul class="menu">
+              <li class="menu__home">
+                <a class="menu__home__link" href="/portfolio/home_page.html"
+                  >Home_page</a
+                >
+              </li>
+              <li class="menu__fam">
+                <a class="menu__fam__link" href="/portfolio/family_page.html"
+                  >Fam</a
+                >
+              </li>
+              <li class="menu__edu">
+                <a class="menu__edu__link" href="/portfolio/education_page.html"
+                  >Education</a
+                >
+              </li>
+              <li class="menu__hobbies">
+                <a
+                  class="menu__hobbies__link"
+                  href="/portfolio/hobbies_page.html"
+                  >Hobbies</a
+                >
+              </li>
+              <li class="menu__contact">
+                <a
+                  class="menu__contact__link"
+                  href="/portfolio/contact_page.html"
+                  >Contact me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__bottom">
+          <p class="developer">Front & Flutter developer</p>
+        </div>
+      </header>
+
+      <section class="contact__container">
+        <div class="input">
+          <h1 class="vertical-text">CONTACT ME</h1>
+
+          <form>
+            <label for="fname">name</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="email">email</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="email">message</label><br />
+            <textarea name="message" id="message">
+Show me your great mind...</textarea
+            >
+            <input
+              type="submit"
+              value="Submit"
+              onclick="alert('Message sent! She will read it soon!')"
+              id="submit__button"
+            />
+          </form>
+        </div>
+
+        <div class="map">
+          <h2 class="vertical-text">FIND ME HERE</h2>
+          <div class="map__content">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11631.790892309122!2d76.67592144999999!3d43.210585800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2sSDU%20University!5e0!3m2!1sen!2skz!4v1728830459537!5m2!1sen!2skz"
+              width="400"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="socials">
+        <div class="social__media">
+          <a href="https://github.com/qaraqiya"
+            ><img
+              src="/portfolio/assets/github-mark-white.png"
+              alt="gitlogo"
+              class="social__logo"
+          /></a>
+        </div>
+        <div class="social__media">
+          <a href="www.linkedin.com/in/aknur-turakhan-535921268"
+            ><img
+              src="/portfolio/assets/In-White-21.png"
+              alt="inlogo"
+              class="social__logo"
+          /></a>
+        </div>
+        <div class="social__media">
+          <a href="https://www.instagram.com/nnuuraah/"
+            ><img
+              src="/portfolio/assets/instagram-white-icon.png"
+              alt="iglogo"
+              class="social__logo instagram"
+          /></a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
